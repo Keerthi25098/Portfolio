@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch | Kureshma M</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Keerthika</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Get In Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Get In Touch</h1>
+        <p class="subtitle">Let’s connect and discuss opportunities or collaborations</p>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>If you have a job opportunity, project idea, or professional inquiry, feel free to reach out.</p>
+                <ul>
+                    <li><strong>Email:</strong> keerthikeerthi32155@example.com</li>
+                    <li><strong>LinkedIn:</strong> linkedin.com/in/keerthika25</li>
+                    <li><strong>GitHub:</strong> github.com/Keerthi25098</li>
+                </ul>
+                <p class="availability">Currently open to full-time roles and internships.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm" novalidate>
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        alert('Thank you for reaching out! Your message has been sent successfully.');
+        form.reset();
+    });
+</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Keerthika  | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

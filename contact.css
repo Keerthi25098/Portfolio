@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body{
+    background: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #000000; /* Black navbar */
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: 600;
+    color: #3CBF9B; /* Sea green logo */
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #FFFFFF; /* White links */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover{
+    color: #3CBF9B; /* Sea green active/hover */
+    border-bottom: 2px solid #3CBF9B;
+}
+
+/* Contact Section */
+.contact{
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #3CBF9B; /* Sea green heading */
+}
+
+.subtitle{
+    color: #CCCCCC; /* Light white/gray subtitle */
+    margin-bottom: 40px;
+}
+
+.contact-container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form{
+    flex: 1;
+    background: #111111; /* Dark gray card */
+    padding: 32px;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(60,191,155,0.2); /* Sea green shadow */
+    text-align: left;
+}
+
+.contact-info h2,
+.contact-form h2{
+    color: #3CBF9B; /* Sea green headings */
+    margin-bottom: 15px;
+}
+
+.contact-info ul{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.contact-info li{
+    margin-bottom: 10px;
+    color: #CCCCCC; /* Light white text */
+}
+
+.availability{
+    margin-top: 20px;
+    font-style: italic;
+    color: #AAAAAA; /* Light gray */
+}
+
+/* Form */
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #3CBF9B; /* Sea green border */
+    background: #000000; /* Black input */
+    color: #FFFFFF; /* White text */
+    font-size: 14px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #CCCCCC; /* Light gray placeholder */
+}
+
+form button{
+    background: #3CBF9B; /* Sea green button */
+    color: #FFFFFF;
+    padding: 13px 32px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #2aa18a; /* Slightly darker sea green on hover */
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 25px;
+    color: #CCCCCC; /* Light white/gray text */
+    font-size: 14px;
+    background-color: #000000; /* Black footer */
+}
